@@ -16,13 +16,14 @@ function onKawara () {
   const m = d.getMonth()
   const month = months[m]
   const year = d.getFullYear()
-  const dateString = `${month}. ${day}, ${year}`
+  const dateString = `${year}. ${month}, ${day}`
   
+  //Where I got my list of NEW fonts from: https://www.w3.org/Style/Examples/007/fonts.en.html
   const span = document.createElement('span')
   span.textContent = dateString
-  span.style.color = 'white'
-  span.style.fontSize = '10vw'
-  span.style.fontFamily = 'Futura, "Trebuchet MS", Arial, sans-serif'
+  span.style.color = 'salmon'
+  span.style.fontSize = '23vw'
+  span.style.fontFamily = 'Times New Roman, Impact, cursive, Bookman'
   document.body.appendChild(span)
 }
 

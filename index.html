@@ -1,6 +1,7 @@
 <script>
 
 function onKawara () {
+  //Changed color to teal
   document.body.style.background = 'teal'
   document.body.style.height = '100vh'
   document.body.style.display = 'grid'
@@ -16,11 +17,13 @@ function onKawara () {
   const m = d.getMonth()
   const month = months[m]
   const year = d.getFullYear()
+  //Changed the order from big to small
   const dateString = `${year}. ${month}, ${day}`
   
   //Where I got my list of NEW fonts from: https://www.w3.org/Style/Examples/007/fonts.en.html
   const span = document.createElement('span')
   span.textContent = dateString
+  //Changed the text color to salmon and size to 23vw
   span.style.color = 'salmon'
   span.style.fontSize = '23vw'
   span.style.fontFamily = 'Times New Roman, Impact, cursive, Bookman'
